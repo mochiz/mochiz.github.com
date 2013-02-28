@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://mochiz.github.com/blog/2013-02-26-octopress/</loc>
+        <lastmod>2013-02-27T11:07:50+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/blog/2013-02-27-vine/</loc>
+        <lastmod>2013-02-27T11:08:17+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/blog/2013-02-27-modern-ios-development-18tips/</loc>
+        <lastmod>2013-03-01T00:53:54+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/blog/2013-03-01-css-child-vs-descendant-selectors/</loc>
+        <lastmod>2013-03-01T00:54:49+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/blog/archives/</loc>
+        <lastmod>2013-03-01T00:54:49+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/</loc>
+        <lastmod>2013-03-01T00:54:49+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mochiz.github.com/robots.txt</loc>
+        <lastmod>2013-02-26T20:35:03+09:00</lastmod>
+    </url>
+</urlset>
