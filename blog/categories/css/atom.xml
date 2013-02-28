@@ -4,7 +4,7 @@
   <title><![CDATA[Category: css | mochiz blog]]></title>
   <link href="http://mochiz.github.com/blog/categories/css/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-01T01:27:35+09:00</updated>
+  <updated>2013-03-01T01:32:05+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -20,8 +20,7 @@
     <id>http://mochiz.github.com/blog/css-child-vs-descendant-selectors</id>
     <content type="html"><![CDATA[<h1>CSS Selectors: Child と Descendant の違い</h1>
 
-<p>どちらも子要素に適用されるというのは認識してたけど、よくわからなくてDescendantばかり使っていました。<br/>
-stackoverflowの解答がわかりやすかったのでメモ。</p>
+<p>stackoverflowの解答がわかりやすかったのでメモ。</p>
 
 <p><blockquote><p>Just think of what the words "child" and "descendant" mean in English:</p></p><p><ul><br/><li>My daughter is both my child and my descendant</li><br/><li><p>My granddaughter is not my child, but she is my descendant.</p></blockquote></p></li>
 <li><p>私の娘は私の<code>child</code>であり<code>descendant</code>でもある</p></li>
@@ -29,7 +28,8 @@ stackoverflowの解答がわかりやすかったのでメモ。</p>
 </ul>
 
 
-<p>なるほどなるほどー</p>
+<p>どちらも子要素に適用されるというのは認識してたけど、よくわからなくてDescendantばかり使っていました。<br/>
+なるほどなるほどー</p>
 
 <h2>URLs</h2>
 
