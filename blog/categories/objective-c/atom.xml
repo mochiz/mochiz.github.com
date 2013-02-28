@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: objective-c | mochiz blog]]></title>
+  <link href="http://mochiz.github.com/blog/categories/objective-c/atom.xml" rel="self"/>
+  <link href="http://mochiz.github.com/"/>
+  <updated>2013-03-01T01:27:35+09:00</updated>
+  <id>http://mochiz.github.com/</id>
+  <author>
+    <name><![CDATA[hiroshi asakura]]></name>
+    <email><![CDATA[mochi.hiro43@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[modern-ios-development-18tips]]></title>
+    <link href="http://mochiz.github.com/blog/2013-02-27-modern-ios-development-18tips/"/>
+    <updated>2013-02-27T14:36:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/modern-ios-development-18tips</id>
+    <content type="html"><![CDATA[<h1>モダンなiOS開発のための18のTips</h1>
+
+<h2>2013/03/01更新</h2>
+
+<p><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a>の自分用メモ。</p>
+
+<ul>
+<li>ARCを使う（Use ARC!）</li>
+<li>可能であればBlocksを使う（Prefer Blocks Where Possible）</li>
+<li>ブロック利用時のRetainサイクルに注意する（Beware Of Retain Cycles With Blocks）</li>
+<li>スレッドを忘れず、GCD（Grand Central Dispatch）を使う（Forget Threads, Use GCD）</li>
+<li>Singletons と Shared Objectsを使う（Singletons / Shared Objects）</li>
+<li>ストーリーボードは試作段階だけに留める（Story Boards Are Just For Rapid Prototypes）</li>
+<li>インターフェースビルダーは基本的なレイアウトにのみ使う（Only Use XIBs For Very Basic Layouts）</li>
+<li>プロジェクトを整理し続ける（Keep Your Project Organised）</li>
+<li>便利なオープンソースを利用する（Embrace Open Source）</li>
+<li>CocoaPodsで依存ライブラリ管理をする（Dependency management）</li>
+<li>stackoverflowを愛することを学ぶ（Learn To Love Stack Overflow）</li>
+<li>最新の環境を基準にし、古い環境ではレベルを落とす（Graceful Degradation）</li>
+<li>カスタムフォントを使う（Custom Fonts）</li>
+<li>最初から国際化する（Localize From The Start）</li>
+<li>アプリのクラッシュをトラッキングする（Track Crashes）</li>
+<li>解析する（Analyze）</li>
+<li>Instrumentsを使う（Instruments）</li>
+<li>レビューをトラッキングする（Track Reviews）</li>
+</ul>
+
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

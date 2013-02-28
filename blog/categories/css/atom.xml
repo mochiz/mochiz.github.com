@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: css | mochiz blog]]></title>
+  <link href="http://mochiz.github.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://mochiz.github.com/"/>
+  <updated>2013-03-01T01:27:35+09:00</updated>
+  <id>http://mochiz.github.com/</id>
+  <author>
+    <name><![CDATA[hiroshi asakura]]></name>
+    <email><![CDATA[mochi.hiro43@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[css-child-vs-descendant-selectors]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-01-css-child-vs-descendant-selectors/"/>
+    <updated>2013-03-01T00:33:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/css-child-vs-descendant-selectors</id>
+    <content type="html"><![CDATA[<h1>CSS Selectors: Child と Descendant の違い</h1>
+
+<p>どちらも子要素に適用されるというのは認識してたけど、よくわからなくてDescendantばかり使っていました。<br/>
+stackoverflowの解答がわかりやすかったのでメモ。</p>
+
+<p><blockquote><p>Just think of what the words "child" and "descendant" mean in English:</p></p><p><ul><br/><li>My daughter is both my child and my descendant</li><br/><li><p>My granddaughter is not my child, but she is my descendant.</p></blockquote></p></li>
+<li><p>私の娘は私の<code>child</code>であり<code>descendant</code>でもある</p></li>
+<li>私の孫娘は私の<code>child</code>ではないが、私の<code>descendant</code>である</li>
+</ul>
+
+
+<p>なるほどなるほどー</p>
+
+<h2>URLs</h2>
+
+<p><a href="http://stackoverflow.com/questions/1182189/css-child-vs-descendant-selectors">CSS Child vs Descendant selectors - Stack Overflow</a></p>
+]]></content>
+  </entry>
+  
+</feed>
