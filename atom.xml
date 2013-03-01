@@ -4,7 +4,7 @@
   <title><![CDATA[mochiz blog]]></title>
   <link href="http://mochiz.github.com/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-01T23:26:00+09:00</updated>
+  <updated>2013-03-01T23:29:24+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -14,13 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[toggle-uibutton-state-when-pressing-like-a-switch]]></title>
+    <title type="html"><![CDATA[UIButtonをtoggle表示できるようにする]]></title>
     <link href="http://mochiz.github.com/blog/2013-03-01-toggle-uibutton-state-when-pressing-like-a-switch/"/>
     <updated>2013-03-01T23:16:00+09:00</updated>
     <id>http://mochiz.github.com/blog/toggle-uibutton-state-when-pressing-like-a-switch</id>
-    <content type="html"><![CDATA[<h1>UIButtonをtoggle表示できるようにする</h1>
-
-<p>stackoverflowより</p>
+    <content type="html"><![CDATA[<p>stackoverflowより</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -68,13 +66,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[different-image-when-button-from-storyboard-tapped]]></title>
+    <title type="html"><![CDATA[Storyboardでボタンタップ時の画像を設定する]]></title>
     <link href="http://mochiz.github.com/blog/2013-03-01-different-image-when-button-from-storyboard-tapped/"/>
     <updated>2013-03-01T23:06:00+09:00</updated>
     <id>http://mochiz.github.com/blog/different-image-when-button-from-storyboard-tapped</id>
-    <content type="html"><![CDATA[<h1>Storyboardでボタンタップ時の画像を設定する方法</h1>
-
-<p>stackoverflowより</p>
+    <content type="html"><![CDATA[<p>stackoverflowより</p>
 
 <p><img src="https://f.cloud.github.com/assets/217503/209743/ef7a403e-8279-11e2-8329-ce7a11c6114d.png" alt="" /></p>
 
@@ -91,13 +87,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[css-child-vs-descendant-selectors]]></title>
+    <title type="html"><![CDATA[CSS Selectors: Child と Descendant の違い]]></title>
     <link href="http://mochiz.github.com/blog/2013-03-01-css-child-vs-descendant-selectors/"/>
     <updated>2013-03-01T00:33:00+09:00</updated>
     <id>http://mochiz.github.com/blog/css-child-vs-descendant-selectors</id>
-    <content type="html"><![CDATA[<h1>CSS Selectors: Child と Descendant の違い</h1>
-
-<p>stackoverflowの解答がわかりやすかったのでメモ。</p>
+    <content type="html"><![CDATA[<p>stackoverflowの解答がわかりやすかったのでメモ。</p>
 
 <blockquote><p>Just think of what the words &#8220;child&#8221; and &#8220;descendant&#8221; mean in English:</p><p>- My daughter is both my child and my descendant<br/>- My granddaughter is not my child, but she is my descendant.</p></blockquote>
 
@@ -118,13 +112,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[modern-ios-development-18tips]]></title>
+    <title type="html"><![CDATA[モダンなiOS開発のための18のTips]]></title>
     <link href="http://mochiz.github.com/blog/2013-02-27-modern-ios-development-18tips/"/>
     <updated>2013-02-27T14:36:00+09:00</updated>
     <id>http://mochiz.github.com/blog/modern-ios-development-18tips</id>
-    <content type="html"><![CDATA[<h1>モダンなiOS開発のための18のTips</h1>
-
-<h2>2013/03/01更新</h2>
+    <content type="html"><![CDATA[<h2>2013/03/01更新</h2>
 
 <p><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a>の自分用メモ。</p>
 

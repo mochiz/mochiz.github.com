@@ -3,17 +3,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>toggle-uibutton-state-when-pressing-like-a-switch - mochiz blog</title>
+	<title>UIButtonをtoggle表示できるようにする - mochiz blog</title>
 	<meta name="author" content="hiroshi asakura">
 
 	
-	<meta name="description" content="Toggle-uibutton-state-when-pressing-like-a-switch UIButtonをtoggle表示できるようにする stackoverflowより 1
+	<meta name="description" content="UIButtonをtoggle表示できるようにする stackoverflowより 1
 2
 3
 4
 5
 -(void)setState:(id)sender
-{ UIButton* button &hellip;">
+{ UIButton* button = (UIButton*)sender; button.selected = !button. &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,10 +96,8 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<h1 class="title" itemprop="name">Toggle-uibutton-state-when-pressing-like-a-switch</h1>
-	<div class="entry-content" itemprop="articleBody"><h1>UIButtonをtoggle表示できるようにする</h1>
-
-<p>stackoverflowより</p>
+	<h1 class="title" itemprop="name">UIButtonをtoggle表示できるようにする</h1>
+	<div class="entry-content" itemprop="articleBody"><p>stackoverflowより</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

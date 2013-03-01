@@ -4,7 +4,7 @@
   <title><![CDATA[Category: objective-c | mochiz blog]]></title>
   <link href="http://mochiz.github.com/blog/categories/objective-c/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-01T23:26:00+09:00</updated>
+  <updated>2013-03-01T23:29:24+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -14,13 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[toggle-uibutton-state-when-pressing-like-a-switch]]></title>
+    <title type="html"><![CDATA[UIButtonをtoggle表示できるようにする]]></title>
     <link href="http://mochiz.github.com/blog/2013-03-01-toggle-uibutton-state-when-pressing-like-a-switch/"/>
     <updated>2013-03-01T23:16:00+09:00</updated>
     <id>http://mochiz.github.com/blog/toggle-uibutton-state-when-pressing-like-a-switch</id>
-    <content type="html"><![CDATA[<h1>UIButtonをtoggle表示できるようにする</h1>
-
-<p>stackoverflowより</p>
+    <content type="html"><![CDATA[<p>stackoverflowより</p>
 
 <p>```objective-c
 -(void)setState:(id)sender
@@ -62,13 +60,11 @@ button.selected = !button.selected;
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[modern-ios-development-18tips]]></title>
+    <title type="html"><![CDATA[モダンなiOS開発のための18のTips]]></title>
     <link href="http://mochiz.github.com/blog/2013-02-27-modern-ios-development-18tips/"/>
     <updated>2013-02-27T14:36:00+09:00</updated>
     <id>http://mochiz.github.com/blog/modern-ios-development-18tips</id>
-    <content type="html"><![CDATA[<h1>モダンなiOS開発のための18のTips</h1>
-
-<h2>2013/03/01更新</h2>
+    <content type="html"><![CDATA[<h2>2013/03/01更新</h2>
 
 <p><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a>の自分用メモ。</p>
 
