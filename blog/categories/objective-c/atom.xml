@@ -4,7 +4,7 @@
   <title><![CDATA[Category: objective-c | mochiz blog]]></title>
   <link href="http://mochiz.github.com/blog/categories/objective-c/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-01T01:32:05+09:00</updated>
+  <updated>2013-03-01T23:26:00+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[toggle-uibutton-state-when-pressing-like-a-switch]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-01-toggle-uibutton-state-when-pressing-like-a-switch/"/>
+    <updated>2013-03-01T23:16:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/toggle-uibutton-state-when-pressing-like-a-switch</id>
+    <content type="html"><![CDATA[<h1>UIButtonをtoggle表示できるようにする</h1>
+
+<p>stackoverflowより</p>
+
+<p>```objective-c
+-(void)setState:(id)sender
+{</p>
+
+<pre><code>UIButton* button = (UIButton*)sender;
+button.selected = !button.selected;
+</code></pre>
+
+<p>}
+```</p>
+
+<p>複数のボタンから呼び出せるので便利
+```objective-c
+-(IBAction)tapAlphaButton:(id)sender
+{</p>
+
+<pre><code>[self setState:sender];
+</code></pre>
+
+<p>}</p>
+
+<p>-(IBAction)tapBetaButton:(id)sender
+{</p>
+
+<pre><code>[self setState:sender];
+</code></pre>
+
+<p>}
+```</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/3300534/toggle-uibutton-state-when-pressing-like-a-switch">iphone - toggle UIButton-state when pressing, like a switch - Stack Overflow</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[modern-ios-development-18tips]]></title>

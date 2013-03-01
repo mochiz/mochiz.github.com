@@ -7,7 +7,12 @@
 	<meta name="author" content="hiroshi asakura">
 
 	
-	<meta name="description" content="Mar 1st, 2013 css Css-child-vs-descendant-selectors CSS Selectors: Child と Descendant の違い stackoverflowの解答がわかりやすかったのでメモ。 Just think of what the &hellip;">
+	<meta name="description" content="Mar 1st, 2013 ios, objective-c Toggle-uibutton-state-when-pressing-like-a-switch UIButtonをtoggle表示できるようにする stackoverflowより 1
+2
+3
+4
+5
+-(void)setState &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +96,135 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-01T23:16:00+09:00" data-updated="true" itemprop="datePublished">Mar 1<span>st</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/objective-c/'>objective-c</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-03-01-toggle-uibutton-state-when-pressing-like-a-switch/" itemprop="url">Toggle-uibutton-state-when-pressing-like-a-switch</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h1>UIButtonをtoggle表示できるようにする</h1>
+
+<p>stackoverflowより</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setState:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="n">UIButton</span><span class="o">*</span> <span class="n">button</span> <span class="o">=</span> <span class="p">(</span><span class="n">UIButton</span><span class="o">*</span><span class="p">)</span><span class="n">sender</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">button</span><span class="p">.</span><span class="n">selected</span> <span class="o">=</span> <span class="o">!</span><span class="n">button</span><span class="p">.</span><span class="n">selected</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>複数のボタンから呼び出せるので便利</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span><span class="nf">tapAlphaButton:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">self</span> <span class="nl">setState:</span><span class="n">sender</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span><span class="nf">tapBetaButton:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">self</span> <span class="nl">setState:</span><span class="n">sender</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/3300534/toggle-uibutton-state-when-pressing-like-a-switch">iphone - toggle UIButton-state when pressing, like a switch - Stack Overflow</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-01T23:06:00+09:00" data-updated="true" itemprop="datePublished">Mar 1<span>st</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/storyboard/'>storyboard</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-03-01-different-image-when-button-from-storyboard-tapped/" itemprop="url">Different-image-when-button-from-storyboard-tapped</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h1>Storyboardでボタンタップ時の画像を設定する方法</h1>
+
+<p>stackoverflowより</p>
+
+<p><img src="https://f.cloud.github.com/assets/217503/209743/ef7a403e-8279-11e2-8329-ce7a11c6114d.png" alt="" /></p>
+
+<p><code>Attributes Inspector</code>で、<code>State Config</code>ごとに画像を設定できます。<br/>
+タップ時の画像は<code>Highlighted</code>で、選択時の画像は<code>Selected</code>で設定できます。</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/12150614/different-image-when-button-from-storyboard-tapped">objective c - Different image when button from storyboard tapped - Stack Overflow</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">

@@ -4,7 +4,7 @@
   <title><![CDATA[mochiz blog]]></title>
   <link href="http://mochiz.github.com/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-01T01:32:05+09:00</updated>
+  <updated>2013-03-01T23:26:00+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -12,6 +12,83 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[toggle-uibutton-state-when-pressing-like-a-switch]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-01-toggle-uibutton-state-when-pressing-like-a-switch/"/>
+    <updated>2013-03-01T23:16:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/toggle-uibutton-state-when-pressing-like-a-switch</id>
+    <content type="html"><![CDATA[<h1>UIButtonをtoggle表示できるようにする</h1>
+
+<p>stackoverflowより</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setState:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="n">UIButton</span><span class="o">*</span> <span class="n">button</span> <span class="o">=</span> <span class="p">(</span><span class="n">UIButton</span><span class="o">*</span><span class="p">)</span><span class="n">sender</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">button</span><span class="p">.</span><span class="n">selected</span> <span class="o">=</span> <span class="o">!</span><span class="n">button</span><span class="p">.</span><span class="n">selected</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>複数のボタンから呼び出せるので便利</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span><span class="nf">tapAlphaButton:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">self</span> <span class="nl">setState:</span><span class="n">sender</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">IBAction</span><span class="p">)</span><span class="nf">tapBetaButton:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">sender</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">self</span> <span class="nl">setState:</span><span class="n">sender</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/3300534/toggle-uibutton-state-when-pressing-like-a-switch">iphone - toggle UIButton-state when pressing, like a switch - Stack Overflow</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[different-image-when-button-from-storyboard-tapped]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-01-different-image-when-button-from-storyboard-tapped/"/>
+    <updated>2013-03-01T23:06:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/different-image-when-button-from-storyboard-tapped</id>
+    <content type="html"><![CDATA[<h1>Storyboardでボタンタップ時の画像を設定する方法</h1>
+
+<p>stackoverflowより</p>
+
+<p><img src="https://f.cloud.github.com/assets/217503/209743/ef7a403e-8279-11e2-8329-ce7a11c6114d.png" alt="" /></p>
+
+<p><code>Attributes Inspector</code>で、<code>State Config</code>ごとに画像を設定できます。<br/>
+タップ時の画像は<code>Highlighted</code>で、選択時の画像は<code>Selected</code>で設定できます。</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/12150614/different-image-when-button-from-storyboard-tapped">objective c - Different image when button from storyboard tapped - Stack Overflow</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[css-child-vs-descendant-selectors]]></title>
