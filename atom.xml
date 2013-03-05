@@ -4,7 +4,7 @@
   <title><![CDATA[mochiz blog]]></title>
   <link href="http://mochiz.github.com/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-03-02T03:28:22+09:00</updated>
+  <updated>2013-03-05T13:04:09+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AppStoreのレビューをデイリーメールしてくれるAppBotがべんり]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-05-app-bot/"/>
+    <updated>2013-03-05T12:45:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/app-bot</id>
+    <content type="html"><![CDATA[<p><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a>の、&#8221;Track Reviews&#8221;より</p>
+
+<p>アプリのレビューをトラッキングするのに、<a href="http://appbot.co/">AppBot</a>が良い感じでした。</p>
+
+<p><a href="http://appbot.co">
+<img src="https://f.cloud.github.com/assets/217503/219818/81c17ab6-8545-11e2-9e68-682c5924dc5e.png" width="700">
+</a></p>
+
+<p><a href="http://appbot.co/">AppBot</a>はAppStoreのレビューをデイリーメールしてくれるサービスです。<br/>
+全てのマーケットのレビューをまとめてくれるので、レビューを監視する手間を省いてくれます。<br/>
+サインアップは無料です。</p>
+
+<p><img src="https://f.cloud.github.com/assets/217503/219822/b9fe017e-8545-11e2-93c3-8493f54ae8b1.png" width="700"></p>
+
+<p>利用はとても簡単で、メールアドレス登録後、アプリをキーワード検索&amp;登録するだけです。<br/>
+自分のアプリ以外も登録可能です。</p>
+
+<p><img src="https://f.cloud.github.com/assets/217503/219825/d59d32b0-8545-11e2-9c5f-7bfafabd5169.png" width="700"></p>
+
+<p>メールだけでなく、サイトから直接レビューを確認することもできます。</p>
+
+<p><img src="https://f.cloud.github.com/assets/217503/219827/ddd2b5fe-8545-11e2-93fb-bbea7df05f40.png" width="700"></p>
+
+<p>登録後、翌朝こんな感じでメールが届きます。（皆さんステマありがとうございます）<br/>
+複数のマーケットのレビューをまとめてくれるところがありがたいですね。</p>
+
+<h2>おわりに</h2>
+
+<p>アプリレビューのトラッキングを省力化してくれる素敵なサービスAppBotの紹介でした。</p>
+
+<p>今回、カリフォルニア在住の知人にもダウンロードしてもらえるよう、en|jpでリリースしたのですが、アプリのUIが日本語だったので英国の方から「英語じゃないと意味分からないよ」と2つ星をいただいてしまいました。キーワードの多言語対応も追々やって行きたい気持ちです。</p>
+
+<p>今後も便利なサービスを利用して、素敵なアプリをつくっていきたいです。</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://appbot.co/">AppBot - App Store reviews and features emailed straight to your inbox.</a></li>
+<li><a href="http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today">iOS Development Tips I Would Want If I Was Starting Out Today</a></li>
+<li><a href="http://mochiz.github.com/blog/2013-02-27-modern-ios-development-18tips/">モダンなiOS開発のための18のTips - mochiz blog</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[UIButtonをtoggle表示できるようにする]]></title>
