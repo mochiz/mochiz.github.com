@@ -7,7 +7,7 @@
 	<meta name="author" content="hiroshi asakura">
 
 	
-	<meta name="description" content="Mar 5th, 2013 ios, service AppStoreのレビューをデイリーメールしてくれるAppBotがべんり iOS Development Tips I Would Want If I Was Starting Out Todayの、&#8221;Track Reviews &hellip;">
+	<meta name="description" content="Mar 16th, 2013 Design4p-2nd 1. 良い感じの漢字フォントはないでしょうか 2. 毛並みっぽい背景画像はないでしょうか 3. アプリを横展開したいのですが、犬、鳥、フクロウなどメインカラーはどんな基準を持って選んだらよいでしょうか &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +91,244 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-16T16:37:00+09:00" data-updated="true" itemprop="datePublished">Mar 16<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-03-16-design4p-2nd/" itemprop="url">Design4p-2nd</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h3>1. 良い感じの漢字フォントはないでしょうか</h3>
+
+<h3>2. 毛並みっぽい背景画像はないでしょうか</h3>
+
+<h3>3. アプリを横展開したいのですが、犬、鳥、フクロウなどメインカラーはどんな基準を持って選んだらよいでしょうか</h3>
+
+<h3>=====================================</h3>
+
+<h1>アプリの他のフォントに合う日本語フォントはないでしょうか</h1>
+
+<ul>
+<li>英語
+
+<ul>
+<li><a href="http://www.myfonts.com/">MyFonts</a>で購入した<a href="http://www.myfonts.com/search/dandygal/fonts/">dandygal</a>フォント</li>
+<li>GoogleWebFontのWendyOne-Regularフォント</li>
+</ul>
+</li>
+<li>ひらがな、かたかな
+
+<ul>
+<li><a href="http://www.flopdesign.com/font4/ureshii_font.html">うれしいたのしいダイスキ</a>フォント</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>しっくり来る漢字のフォントを探してます</h3>
+
+<ul>
+<li>漢字のフォントって買い方がわからない。めちゃめちゃ高い</li>
+<li>ぽってり太めな感じ</li>
+<li>できれば1文字単位で購入できる</li>
+<li>できればアプリ組み込みOKなライセンスの</li>
+</ul>
+
+
+<h1>毛並みっぽい背景画像はないでしょうか</h1>
+
+<p><a href="http://subtlepatterns.com/">Subtile Patterns</a>のWhite Wallを背景画像に使っています。<br/>
+猫とか犬の毛並みっぽい背景画像はないでしょうか。</p>
+
+<h1>アプリを横展開したいのですが、犬、鳥、フクロウなどメインカラーはどんな基準を持って選んだらよいでしょうか</h1>
+
+<p>猫 > 自宅のキジトラ > 茶色
+という理由で、メインカラーを茶色にしました。</p>
+
+<p>犬 > 柴犬 > 茶色？<br/>
+文鳥 > 白と赤？<br/>
+フクロウ > 茶色？</p>
+
+<p>茶色ばっかり</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-13T05:41:00+09:00" data-updated="true" itemprop="datePublished">Mar 13<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-03-13-heroku-rails-unicorn/" itemprop="url">HerokuのHTTPサーバをUnicornに変更する</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><a href="">WEB+DB PRESS vol.70</a>の&#8221;実践Rails高速化&#8221;特集などでも取り上げられている</p>
+
+<h2><a href="http://unicorn.bogomips.org/">Unicorn</a>とは</h2>
+
+<p>Rackアプリ向けのモダンでイケてるHTTPサーバです。<br/>
+Unicornってまず名前がいいですよね、デストロイモードになりそう、なったら困るけど。<br/>
+何が素晴らしいのかとかはお母さんにでも聞いて下さい。</p>
+
+<p><a href="https://devcenter.heroku.com/articles/rails-unicorn">Herokuの公式サイト</a>に掲載された手順に従って設定してみます。</p>
+
+<h2>1. Gemをインストールする</h2>
+
+<p>まずはいつものとおりgemインストールからです。<br/>
+Gemfileにunicornを追加してbundleインストールしましょう。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'unicorn'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>run <code>$ bundle install</code></p>
+
+<h2>2. コンフィグを作成する</h2>
+
+<p>次にUnicorn用のコンフィグを作成します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ touch config/unicorn.rb</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#config/unicorn.rb
+</span><span class='line'>worker_processes 3
+</span><span class='line'>timeout 30
+</span><span class='line'>preload_app true
+</span><span class='line'>
+</span><span class='line'>before_fork do |server, worker|
+</span><span class='line'>
+</span><span class='line'>  Signal.trap 'TERM' do
+</span><span class='line'>    puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
+</span><span class='line'>    Process.kill 'QUIT', Process.pid
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  defined?(ActiveRecord::Base) and
+</span><span class='line'>    ActiveRecord::Base.connection.disconnect!
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>after_fork do |server, worker|
+</span><span class='line'>
+</span><span class='line'>  Signal.trap 'TERM' do
+</span><span class='line'>    puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to sent QUIT'
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  defined?(ActiveRecord::Base) and
+</span><span class='line'>    ActiveRecord::Base.establish_connection
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>3. Procfileを変更する</h2>
+
+<p>プロセスをUnicornで立ち上げるため、Procfileを変更します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb</span></code></pre></td></tr></table></div></figure>
+
+
+<p>※ローカルで試す場合は次のコマンドからどうぞ <code>$ foreman start</code>.</p>
+
+<h2>Herokuへデプロイする</h2>
+
+<p>Herokuへデプロイ後、プロセスコマンドで確認しましょう。<br/>
+ちゃんとUnicornでwebプロセスが起動しているようですね。ヒヒーン</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ heroku ps
+</span><span class='line'>=== web: `bundle exec unicorn -p $PORT -c ./config/unicorn.rb`
+</span><span class='line'>web.1: up 2013/03/13 04:00:30 (~ 1h ago)</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>まとめ</h2>
+
+<ul>
+<li>gemをインストールする</li>
+<li>configを作成する</li>
+<li>Procfileを変更する</li>
+</ul>
+
+
+<p>3ステップで変更できました。とても簡単ですね。<br/>
+Railsのエコシステムは素晴らしくて、本当ありがたいです。</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://unicorn.bogomips.org/">Unicorn: Rack HTTP server for fast clients and Unix</a></li>
+<li><a href="https://blog.heroku.com/archives/2013/2/27/unicorn_rails">Heroku | Adding Concurrency to Rails Apps with Unicorn</a></li>
+<li><a href="https://devcenter.heroku.com/articles/rails-unicorn">Deploying Rails Applications With Unicorn | Heroku Dev Center</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
