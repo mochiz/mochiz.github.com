@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rails勉強会＠東京 第82回に参加してきました - mochiz blog</title>
+	<meta name="author" content="hiroshi asakura">
+
+	
+	<meta name="description" content="Rails勉強会＠東京 第82回に参加してきました いつ以来でしょうか、Rails勉強会＠東京に参加して来ました。
+メモした内容を幾つかピックアップしてお届けします。 TDD / BDD について勉強しよう rspec の describe と context の使い分けを教えて &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="mochiz blog" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://mochiz.github.com/blog/2013-04-21-rails-meeting-tokyo-82/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("mochi.hiro43@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;'");
+	</script>
+</div>
+<h1><a href="/">mochiz blog</a></h1>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<p class="subtitle"></p>
+<p class="description">developer qnyp, llc.</p>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="github" href="https://github.com/mochiz" title="GitHub">GitHub</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/mochiz" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/mochiz">mochiz</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('mochiz', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Rails勉強会＠東京 第82回に参加してきました</h1>
+	<div class="entry-content" itemprop="articleBody"><p>いつ以来でしょうか、Rails勉強会＠東京に参加して来ました。<br/>
+メモした内容を幾つかピックアップしてお届けします。</p>
+
+<h2>TDD / BDD について勉強しよう</h2>
+
+<ul>
+<li>rspec の describe と context の使い分けを教えて
+
+<ul>
+<li>describe はメソッドと1対1に使う</li>
+<li>describe はテスト対象</li>
+<li>context は場合分け</li>
+<li>context 内でテスト対象が複数ある場合、複数 describe がぶら下がる</li>
+</ul>
+</li>
+<li>書籍について
+
+<ul>
+<li><a href="http://www.amazon.co.jp/dp/4798124583">実践テスト駆動開発 テストに導かれてオブジェクト指向ソフトウェアを育てる </a> を読もう</li>
+<li><a href="http://www.amazon.co.jp/dp/4894717115">テスト駆動開発入門</a> を読もう</li>
+<li><a href="http://www.amazon.co.jp/dp/0131495054">xUnit Test Patterns: Refactoring Test Code</a> 無理でしょ</li>
+</ul>
+</li>
+<li>spec どんな感じに書いてる?
+
+<ul>
+<li>モックを使うと、実装が変わってもテストが成功する場合があるのであまり好きじゃない</li>
+<li>イヤイヤモックを使ってる（笑）</li>
+<li>controller スペックからさらっと書く（どこにリダイレクトされるか、何がレンダーされるか程度）</li>
+<li>ソーシャルゲームではビューがコロコロ変わるので、requests specは無駄が多いので書かない</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Rais4についてなんか勉強しよう</h2>
+
+<ul>
+<li>controller での concern の役割
+
+<ul>
+<li>before_filter をまとめる役割としての concern はよく使う</li>
+<li>複数の controller で、メンテナンス中にメンテ画面へ飛ばす処理をまとめる、などに使っている</li>
+<li>↑の処理は application_controller にあってもいいけど、アプリ全体で使う機能ではないので、適切ではない</li>
+<li>concern に抽出することで肥大化を防いでいる</li>
+</ul>
+</li>
+<li>プリローダーについて
+
+<ul>
+<li>spring をつかおう</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>その他メモった内容</h2>
+
+<ul>
+<li><a href="https://github.com/amatsuda/active_decorator">amatsuda/active_decorator · GitHub</a><br/>
+ person.link のように、オブジェクト指向的なヘルパーメソッドを実現してくれる。</li>
+<li><a href="https://github.com/jnicklas/turnip">jnicklas/turnip · GitHub</a><br/>
+ カブ。モダンな cucumber</li>
+<li><a href="https://github.com/amatsuda/hocus_pocus">amatsuda/hocus_pocus · GitHub</a><br/>
+ なんだっけこれ</li>
+<li><a href="http://www.datadoghq.com/">Datadog - Home</a><br/>
+ dashboard サービス</li>
+</ul>
+
+
+<h2>おわり</h2>
+
+<p>人が多いところとかボエッとなるかと思ったのですが、楽しみながら勉強することが出来ました。<br/>
+コミュ障の私でも、コードを通してなら意思の疎通が図れそうなことが分かったので、また機会があればヒドいコードを持ち込みたいと思います。<br/>
+主催者・参加者の皆さんありがとうございました。</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+  <a href="http://b.hatena.ne.jp/entry/http://mochiz.github.com/blog/2013-04-21-rails-meeting-tokyo-82/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+  <a href="http://twitter.com/share" class="addthis_button_tweet twitter-share-button" data-url="http://mochiz.github.com/blog/2013-04-21-rails-meeting-tokyo-82/" data-counturl="http://mochiz.github.com/blog/2013-04-21-rails-meeting-tokyo-82/" ></a>
+	
+	
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - hiroshi asakura -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38828733-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

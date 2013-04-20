@@ -7,7 +7,8 @@
 	<meta name="author" content="hiroshi asakura">
 
 	
-	<meta name="description" content="Apr 21st, 2013 gem, rails, test RailsCasts #413 Fast Tests #413 Fast Tests (pro) - RailsCasts より、開発が進むごとに遅くなりがちなRailsのテスト速度を改善するTipsをいくつか。 preloader &hellip;">
+	<meta name="description" content="Apr 21st, 2013 meetup, rails, rspec Rails勉強会＠東京 第82回に参加してきました いつ以来でしょうか、Rails勉強会＠東京に参加して来ました。
+メモした内容を幾つかピックアップしてお届けします。 TDD / BDD について勉強しよう rspec の &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +92,115 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-21T00:46:00+09:00" data-updated="true" itemprop="datePublished">Apr 21<span>st</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/meetup/'>meetup</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/rspec/'>rspec</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-04-21-rails-meeting-tokyo-82/" itemprop="url">Rails勉強会＠東京 第82回に参加してきました</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>いつ以来でしょうか、Rails勉強会＠東京に参加して来ました。<br/>
+メモした内容を幾つかピックアップしてお届けします。</p>
+
+<h2>TDD / BDD について勉強しよう</h2>
+
+<ul>
+<li>rspec の describe と context の使い分けを教えて
+
+<ul>
+<li>describe はメソッドと1対1に使う</li>
+<li>describe はテスト対象</li>
+<li>context は場合分け</li>
+<li>context 内でテスト対象が複数ある場合、複数 describe がぶら下がる</li>
+</ul>
+</li>
+<li>書籍について
+
+<ul>
+<li><a href="http://www.amazon.co.jp/dp/4798124583">実践テスト駆動開発 テストに導かれてオブジェクト指向ソフトウェアを育てる </a> を読もう</li>
+<li><a href="http://www.amazon.co.jp/dp/4894717115">テスト駆動開発入門</a> を読もう</li>
+<li><a href="http://www.amazon.co.jp/dp/0131495054">xUnit Test Patterns: Refactoring Test Code</a> 無理でしょ</li>
+</ul>
+</li>
+<li>spec どんな感じに書いてる?
+
+<ul>
+<li>モックを使うと、実装が変わってもテストが成功する場合があるのであまり好きじゃない</li>
+<li>イヤイヤモックを使ってる（笑）</li>
+<li>controller スペックからさらっと書く（どこにリダイレクトされるか、何がレンダーされるか程度）</li>
+<li>ソーシャルゲームではビューがコロコロ変わるので、requests specは無駄が多いので書かない</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Rais4についてなんか勉強しよう</h2>
+
+<ul>
+<li>controller での concern の役割
+
+<ul>
+<li>before_filter をまとめる役割としての concern はよく使う</li>
+<li>複数の controller で、メンテナンス中にメンテ画面へ飛ばす処理をまとめる、などに使っている</li>
+<li>↑の処理は application_controller にあってもいいけど、アプリ全体で使う機能ではないので、適切ではない</li>
+<li>concern に抽出することで肥大化を防いでいる</li>
+</ul>
+</li>
+<li>プリローダーについて
+
+<ul>
+<li>spring をつかおう</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>その他メモった内容</h2>
+
+<ul>
+<li><a href="https://github.com/amatsuda/active_decorator">amatsuda/active_decorator · GitHub</a><br/>
+ person.link のように、オブジェクト指向的なヘルパーメソッドを実現してくれる。</li>
+<li><a href="https://github.com/jnicklas/turnip">jnicklas/turnip · GitHub</a><br/>
+ カブ。モダンな cucumber</li>
+<li><a href="https://github.com/amatsuda/hocus_pocus">amatsuda/hocus_pocus · GitHub</a><br/>
+ なんだっけこれ</li>
+<li><a href="http://www.datadoghq.com/">Datadog - Home</a><br/>
+ dashboard サービス</li>
+</ul>
+
+
+<h2>おわり</h2>
+
+<p>人が多いところとかボエッとなるかと思ったのですが、楽しみながら勉強することが出来ました。<br/>
+コミュ障の私でも、コードを通してなら意思の疎通が図れそうなことが分かったので、また機会があればヒドいコードを持ち込みたいと思います。<br/>
+主催者・参加者の皆さんありがとうございました。</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
