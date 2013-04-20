@@ -7,7 +7,7 @@
 	<meta name="author" content="hiroshi asakura">
 
 	
-	<meta name="description" content="Mar 13th, 2013 HerokuのHTTPサーバをUnicornに変更する WEB+DB PRESS vol.70の&#8221;実践Rails高速化&#8221;特集などでも取り上げられている Unicornとは Rackアプリ向けのモダンでイケてるHTTPサーバです。 &hellip;">
+	<meta name="description" content="Apr 21st, 2013 RailsCasts #413 Fast Tests #413 Fast Tests (pro) - RailsCasts より、開発が進むごとに遅くなりがちなRailsのテスト速度を改善するTipsをいくつか。 preloader（zeus, spring）を使う &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +91,59 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-21T00:00:00+09:00" data-updated="true" itemprop="datePublished">Apr 21<span>st</span>, 2013</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013-04-21-railscast-413-fast-tests/" itemprop="url">RailsCasts #413 Fast Tests</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><a href="http://railscasts.com/episodes/413-fast-tests">#413 Fast Tests (pro) - RailsCasts</a> より、開発が進むごとに遅くなりがちなRailsのテスト速度を改善するTipsをいくつか。</p>
+
+<ul>
+<li>preloader（<a href="https://github.com/burke/zeus">zeus</a>, <a href="https://github.com/jonleighton/spring">spring</a>）を使う</li>
+<li><a href="http://rubydoc.info/github/rspec/rspec-core/RSpec/Core/Configuration:filter_run_excluding">filter_run_excluding</a> で遅いテストを除外する</li>
+<li><a href="http://ariejan.net/2011/09/24/rspec-speed-up-by-tweaking-ruby-garbage-collection/">DeferredGarbageCollection</a> でガベージコレクションを延期する</li>
+<li><a href="https://github.com/grosser/parallel_tests">parallel_tests</a> でテストを並列実行する</li>
+<li>（VRCのところで力尽きました。自分で調べてね！）</li>
+</ul>
+
+
+<h2>Resources</h2>
+
+<ul>
+<li><a href="http://ariejan.net/2011/09/24/rspec-speed-up-by-tweaking-ruby-garbage-collection/">RSpec speed-up (24.6%) by tweaking ruby garbage collection — ariejan.net</a></li>
+<li><a href="https://github.com/grosser/parallel_tests">grosser/parallel_tests · GitHub</a></li>
+<li><a href="https://github.com/sevos/zeus-parallel_tests">sevos/zeus-parallel_tests · GitHub</a></li>
+<li><a href="http://railscasts.com/episodes/275-how-i-test">#275 How I Test - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/412-fast-rails-commands">#412 Fast Rails Commands - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/264-guard">#264 Guard - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/291-testing-with-vcr">#291 Testing with VCR (pro) - RailsCasts</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
