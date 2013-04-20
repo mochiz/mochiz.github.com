@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rails | mochiz blog]]></title>
   <link href="http://mochiz.github.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://mochiz.github.com/"/>
-  <updated>2013-04-21T01:01:30+09:00</updated>
+  <updated>2013-04-21T01:02:27+09:00</updated>
   <id>http://mochiz.github.com/</id>
   <author>
     <name><![CDATA[hiroshi asakura]]></name>
@@ -18,7 +18,7 @@
     <link href="http://mochiz.github.com/blog/2013-04-21-rails-meeting-tokyo-82/"/>
     <updated>2013-04-21T00:46:00+09:00</updated>
     <id>http://mochiz.github.com/blog/rails-meeting-tokyo-82</id>
-    <content type="html"><![CDATA[<p>いつ以来でしょうか、Rails勉強会＠東京に参加して来ました。<br/>
+    <content type="html"><![CDATA[<p>いつ以来でしょうか、<a href="http://railsmeetingtokyo.doorkeeper.jp/events/3617">Rails勉強会＠東京</a>に参加して来ました。<br/>
 メモした内容を幾つかピックアップしてお届けします。</p>
 
 <h2>TDD / BDD について勉強しよう</h2>
