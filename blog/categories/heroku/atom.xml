@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: heroku | mochiz blog]]></title>
+  <link href="http://mochiz.github.com/blog/categories/heroku/atom.xml" rel="self"/>
+  <link href="http://mochiz.github.com/"/>
+  <updated>2013-04-21T00:19:37+09:00</updated>
+  <id>http://mochiz.github.com/</id>
+  <author>
+    <name><![CDATA[hiroshi asakura]]></name>
+    <email><![CDATA[mochi.hiro43@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HerokuのHTTPサーバをUnicornに変更する]]></title>
+    <link href="http://mochiz.github.com/blog/2013-03-13-heroku-rails-unicorn/"/>
+    <updated>2013-03-13T05:41:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/heroku-rails-unicorn</id>
+    <content type="html"><![CDATA[<p><a href="">WEB+DB PRESS vol.70</a>の"実践Rails高速化"特集などでも取り上げられている</p>
+
+<h2><a href="http://unicorn.bogomips.org/">Unicorn</a>とは</h2>
+
+<p>Rackアプリ向けのモダンでイケてるHTTPサーバです。<br/>
+Unicornってまず名前がいいですよね、デストロイモードになりそう、なったら困るけど。<br/>
+何が素晴らしいのかとかはお母さんにでも聞いて下さい。</p>
+
+<p><a href="https://devcenter.heroku.com/articles/rails-unicorn">Herokuの公式サイト</a>に掲載された手順に従って設定してみます。</p>
+
+<h2>1. Gemをインストールする</h2>
+
+<p>まずはいつものとおりgemインストールからです。<br/>
+Gemfileにunicornを追加してbundleインストールしましょう。</p>
+
+<p><code>
+gem 'unicorn'
+</code>
+run <code>$ bundle install</code></p>
+
+<h2>2. コンフィグを作成する</h2>
+
+<p>次にUnicorn用のコンフィグを作成します。</p>
+
+<p><code>
+$ touch config/unicorn.rb
+</code></p>
+
+<p>```</p>
+
+<h1>config/unicorn.rb</h1>
+
+<p>worker_processes 3
+timeout 30
+preload_app true</p>
+
+<p>before_fork do |server, worker|</p>
+
+<p>  Signal.trap 'TERM' do</p>
+
+<pre><code>puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
+Process.kill 'QUIT', Process.pid
+</code></pre>
+
+<p>  end</p>
+
+<p>  defined?(ActiveRecord::Base) and</p>
+
+<pre><code>ActiveRecord::Base.connection.disconnect!
+</code></pre>
+
+<p>end</p>
+
+<p>after_fork do |server, worker|</p>
+
+<p>  Signal.trap 'TERM' do</p>
+
+<pre><code>puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to sent QUIT'
+</code></pre>
+
+<p>  end</p>
+
+<p>  defined?(ActiveRecord::Base) and</p>
+
+<pre><code>ActiveRecord::Base.establish_connection
+</code></pre>
+
+<p>end
+```</p>
+
+<h2>3. Procfileを変更する</h2>
+
+<p>プロセスをUnicornで立ち上げるため、Procfileを変更します。</p>
+
+<p><code>
+web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
+</code></p>
+
+<p>※ローカルで試す場合は次のコマンドからどうぞ <code>$ foreman start</code>.</p>
+
+<h2>Herokuへデプロイする</h2>
+
+<p>Herokuへデプロイ後、プロセスコマンドで確認しましょう。<br/>
+ちゃんとUnicornでwebプロセスが起動しているようですね。ヒヒーン</p>
+
+<p><code>
+$ heroku ps
+=== web: `bundle exec unicorn -p $PORT -c ./config/unicorn.rb`
+web.1: up 2013/03/13 04:00:30 (~ 1h ago)
+</code></p>
+
+<h2>まとめ</h2>
+
+<ul>
+<li>gemをインストールする</li>
+<li>configを作成する</li>
+<li>Procfileを変更する</li>
+</ul>
+
+
+<p>3ステップで変更できました。とても簡単ですね。<br/>
+Railsのエコシステムは素晴らしくて、本当ありがたいです。</p>
+
+<h2>URLs</h2>
+
+<ul>
+<li><a href="http://unicorn.bogomips.org/">Unicorn: Rack HTTP server for fast clients and Unix</a></li>
+<li><a href="https://blog.heroku.com/archives/2013/2/27/unicorn_rails">Heroku | Adding Concurrency to Rails Apps with Unicorn</a></li>
+<li><a href="https://devcenter.heroku.com/articles/rails-unicorn">Deploying Rails Applications With Unicorn | Heroku Dev Center</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

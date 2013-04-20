@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: test | mochiz blog]]></title>
+  <link href="http://mochiz.github.com/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://mochiz.github.com/"/>
+  <updated>2013-04-21T00:19:37+09:00</updated>
+  <id>http://mochiz.github.com/</id>
+  <author>
+    <name><![CDATA[hiroshi asakura]]></name>
+    <email><![CDATA[mochi.hiro43@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RailsCasts #413 Fast Tests]]></title>
+    <link href="http://mochiz.github.com/blog/2013-04-21-railscast-413-fast-tests/"/>
+    <updated>2013-04-21T00:00:00+09:00</updated>
+    <id>http://mochiz.github.com/blog/railscast-413-fast-tests</id>
+    <content type="html"><![CDATA[<p><a href="http://railscasts.com/episodes/413-fast-tests">#413 Fast Tests (pro) - RailsCasts</a> より、開発が進むごとに遅くなりがちなRailsのテスト速度を改善するTipsをいくつか。</p>
+
+<ul>
+<li>preloader（<a href="https://github.com/burke/zeus">zeus</a>, <a href="https://github.com/jonleighton/spring">spring</a>）を使う</li>
+<li><a href="http://rubydoc.info/github/rspec/rspec-core/RSpec/Core/Configuration:filter_run_excluding">filter_run_excluding</a> で遅いテストを除外する</li>
+<li><a href="http://ariejan.net/2011/09/24/rspec-speed-up-by-tweaking-ruby-garbage-collection/">DeferredGarbageCollection</a> でガベージコレクションを延期する</li>
+<li><a href="https://github.com/grosser/parallel_tests">parallel_tests</a> でテストを並列実行する</li>
+<li>（VRCのところで力尽きました。自分で調べてね！）</li>
+</ul>
+
+
+<h2>Resources</h2>
+
+<ul>
+<li><a href="http://ariejan.net/2011/09/24/rspec-speed-up-by-tweaking-ruby-garbage-collection/">RSpec speed-up (24.6%) by tweaking ruby garbage collection — ariejan.net</a></li>
+<li><a href="https://github.com/grosser/parallel_tests">grosser/parallel_tests · GitHub</a></li>
+<li><a href="https://github.com/sevos/zeus-parallel_tests">sevos/zeus-parallel_tests · GitHub</a></li>
+<li><a href="http://railscasts.com/episodes/275-how-i-test">#275 How I Test - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/412-fast-rails-commands">#412 Fast Rails Commands - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/264-guard">#264 Guard - RailsCasts</a></li>
+<li><a href="http://railscasts.com/episodes/291-testing-with-vcr">#291 Testing with VCR (pro) - RailsCasts</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
